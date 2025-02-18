@@ -1,79 +1,127 @@
-# DisMap: Advanced Network Vulnerability Scanner 
+# DisMap: Advanced Network Vulnerability Scanner 🌐🔍
 
 ## Overview
-DisMap is a powerful, multi-protocol network scanning and vulnerability detection tool designed to provide comprehensive insights into network security.
 
-## Features 
-- **Multi-Protocol Scanning**: Supports TCP scanning across various services
-- **Vulnerability Detection**: Integrated vulnerability database with CVE information
-- **Configurable Scan Types**: 
-  - Quick Scan: Checks critical ports
-  - Full Scan: Comprehensive port scanning
-- **Timing Templates**: Customizable scan aggressiveness (T0-T5)
-- **Detailed Reporting**: HTML and JSON report generation
+DisMap is an advanced network scanning and vulnerability detection tool that provides comprehensive security insights by leveraging authoritative vulnerability databases and intelligent scanning techniques.
 
-## Installation 
+## Key Features 🚀
+
+- **Comprehensive Vulnerability Intelligence**
+  - Real-time vulnerability data integration
+  - Cross-referenced vulnerability information
+  - Multi-source vulnerability mapping
+
+- **Advanced Scanning Capabilities**
+  - Multi-protocol TCP scanning
+  - Configurable scan strategies
+  - Adaptive timing templates
+  - Detailed service and version detection
+
+- **Intelligent Vulnerability Management**
+  - NVD (National Vulnerability Database) integration
+  - MITRE CVE cross-referencing
+  - Automated vulnerability correlation
+  - Comprehensive reporting mechanisms
+
+## Vulnerability Data Sources 📊
+
+DisMap aggregates vulnerability information from multiple authoritative sources:
+
+- **National Vulnerability Database (NVD)**
+  - Maintained by NIST
+  - Provides standardized vulnerability information
+  - Includes CVSS scoring and detailed vulnerability descriptions
+
+- **MITRE CVE List**
+  - Comprehensive Common Vulnerabilities and Exposures (CVE) repository
+  - Globally recognized vulnerability identification system
+  - Provides unique identifiers for known cybersecurity vulnerabilities
+
+## Installation 🛠️
 
 ### Prerequisites
 - Python 3.8+
-- pip
+- pip package manager
 
 ### Dependencies
-Install required packages:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage 
+## Usage 📋
 
 ### Basic Scanning
 ```bash
-# Quick scan of a target
+# Quick network scan
 python dismap.py 192.168.1.1
 
-# Full scan with aggressive timing
+# Full comprehensive scan
 python dismap.py 192.168.1.1 -t full -T4
 
-# Scan specific ports
+# Targeted port scanning
 python dismap.py 192.168.1.1 -p 22,80,443
 ```
 
-### Scan Types
-- `-t quick`: Scan common ports (default)
-- `-t full`: Comprehensive port scanning
+### Scan Configurations
 
-### Timing Templates
-- `-T0`: Paranoid (extremely slow)
-- `-T1`: Sneaky (slow)
-- `-T2`: Polite (reduced load)
-- `-T3`: Normal (balanced, default)
-- `-T4`: Aggressive (faster)
-- `-T5`: Insane (fastest)
+#### Scan Types
+- `-t quick`: Rapid critical port scanning (default)
+- `-t full`: Comprehensive network exploration
 
-## Security Considerations 
-- Always obtain proper authorization before scanning networks
-- Scanning without permission may be illegal
-- Use responsibly and ethically
+#### Timing Templates
+- `-T0`: Paranoid (minimal network impact)
+- `-T1`: Cautious (low-and-slow approach)
+- `-T2`: Conservative (reduced network load)
+- `-T3`: Balanced (default scanning strategy)
+- `-T4`: Aggressive (faster scanning)
+- `-T5`: Intense (maximum speed, higher detection risk)
 
-## Vulnerability Detection 
-DisMap includes a comprehensive vulnerability database covering:
-- SMB vulnerabilities
-- RPC vulnerabilities
-- Windows-specific exploits
+## Security Considerations ⚠️
 
-## Contributing 
+- **Ethical Use**: Obtain explicit authorization before scanning
+- **Legal Compliance**: Unauthorized network scanning may violate laws
+- **Responsible Disclosure**: Report vulnerabilities through proper channels
+
+## Contributing 🤝
+
+### Project Maintainer
+**Priyank Vachhani**
+- GitHub: [@Priyank-CyberK](https://github.com/Priyank-CyberK)
+- Email: vachhanipriyank@gmail.com
+
+### Contribution Guidelines
 1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## License 
-[Specify your license, e.g., MIT License]
+## License 📄
 
-## Disclaimer 
-This tool is for educational and authorized testing purposes only. 
-Unauthorized scanning of networks you do not own is illegal.
+### MIT License
 
-## Author
-[Your Name/Organization]
+Copyright (c) 2025 Priyank Vachhani
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Disclaimer ⚖️
+
+DisMap is an educational tool designed for authorized network security testing. 
+Users are solely responsible for compliance with all applicable laws and regulations. 
+Unauthorized network scanning is strictly prohibited.
